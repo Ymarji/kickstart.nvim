@@ -316,6 +316,10 @@ vim.o.smartcase = true
 -- Keep signcolumn on by default
 vim.wo.signcolumn = 'yes'
 
+-- Relative number
+vim.wo.relativenumber = true
+vim.api.nvim_set_hl(0, 'LineNr', { fg = "white"})
+
 -- Decrease update time
 vim.o.updatetime = 250
 vim.o.timeoutlen = 300
@@ -325,7 +329,7 @@ vim.o.completeopt = 'menuone,noselect'
 
 -- NOTE: You should make sure your terminal supports this
 vim.o.termguicolors = true
-
+vim.g.neo_tree_auto_resize = 0
 -- [[ Basic Keymaps ]]
 
 -- Keymaps for better default experience
